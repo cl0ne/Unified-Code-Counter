@@ -1,0 +1,40 @@
+Below is the list of major contributors listed in anti-chronological order.
+
+Dr. Barry Boehm, Marilee Wheaton, and A Winsor Brown had the idea of creating a tool that would provide a standard for code counting, which led to UCC. 
+
+All UCC versions:
+* University of Southern California CSCI 590 with Center for Systems and Software Engineering DR students that worked on the UCC project have contributed significantly, and are all greatly appreciated for their high-quality work, dedication, desire to learn, and motivation to improve UCC as a product.
+* The Aerospace Corporation and Integrated Applications Incorporated, thank you for your IV&V efforts!
+
+2009 - Present
+* Marilyn A. Sperka, thank you for being a valuable member of the UCC team, training everyone on the team, answering questions, and providing valuable insight. 
+
+2014 - Present
+* Randy Maxwell, thank you for making major performance improvements to UCC, modifying the algorithms to consume less RAM, implementing the Scala parser, and implementing UCC to be multithreaded! Additionally, for your independent testing and helping CSCI 590 students implement and fix defects.
+
+2017
+* Paul Cymerman and Joseph VanDyke, thank you for the suggestions for improvement and implementing the initial Maintainability Index output option!
+
+2009 - 2014
+* Ryan Pfeifer, thank you for your major contributions for making UCC the product it is today!
+
+2013.04
+* Robert Christensen, thank you for making a major modification and performance improvement to the Differencing algorithm!
+
+2011.10
+* Shunpike Baba, thank you for contributing a defect fix!
+
+2009 - 2011
+* Joni Kim, thank you for your extensive testing and quality assurance efforts!
+
+2000 - 2011
+* Vu Nguyen, thank you for your major contributions for making UCC the product it is today, and managing the USC students!
+
+2008-2009
+* Mike Lee, thank you for leading the early UCC project efforts!
+
+2002
+* Paul Cymerman, Betsy Legg, and Sarah Capellari for coding up the first Diff Tool add-on to UCC!
+
+
+

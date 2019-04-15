@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>UCC</ProjectName>
+    <ProjectGuid>{FA47D54A-CAC6-4A69-B2CB-F3C4F9C37B0B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin/Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin/Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)UCC.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)UCC.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)UCC.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAdaCounter.cpp" />
+    <ClCompile Include="src\CAssemblyCounter.cpp" />
+    <ClCompile Include="src\CBashCounter.cpp" />
+    <ClCompile Include="src\CBatchCounter.cpp" />
+    <ClCompile Include="src\CCJavaCsScalaCounter.cpp" />
+    <ClCompile Include="src\CCobolCounter.cpp" />
+    <ClCompile Include="src\cc_main.cpp" />
+    <ClCompile Include="src\CCCounter.cpp" />
+    <ClCompile Include="src\CCFScriptCounter.cpp" />
+    <ClCompile Include="src\CCodeCounter.cpp" />
+    <ClCompile Include="src\CColdFusionCounter.cpp" />
+    <ClCompile Include="src\CCsharpCounter.cpp" />
+    <ClCompile Include="src\CCshCounter.cpp" />
+    <ClCompile Include="src\CCssCounter.cpp" />
+    <ClCompile Include="src\CDataCounter.cpp" />
+    <ClCompile Include="src\CFortranCounter.cpp" />
+    <ClCompile Include="src\CHtmlCounter.cpp" />
+    <ClCompile Include="src\CIdlCounter.cpp" />
+    <ClCompile Include="src\CJavaCounter.cpp" />
+    <ClCompile Include="src\CJavascriptCounter.cpp" />
+    <ClCompile Include="src\CMakefileCounter.cpp" />
+    <ClCompile Include="src\CMatlabCounter.cpp" />
+    <ClCompile Include="src\CMidasCounter.cpp" />
+    <ClCompile Include="src\CmpMngr.cpp" />
+    <ClCompile Include="src\CmpMngrHtml.cpp" />
+    <ClCompile Include="src\CNeXtMidasCounter.cpp" />
+    <ClCompile Include="src\CObjCCounter.cpp" />
+    <ClCompile Include="src\CPascalCounter.cpp" />
+    <ClCompile Include="src\CPerlCounter.cpp" />
+    <ClCompile Include="src\CPhpCounter.cpp" />
+    <ClCompile Include="src\CPythonCounter.cpp" />
+    <ClCompile Include="src\CRubyCounter.cpp" />
+    <ClCompile Include="src\CScalaCounter.cpp" />
+    <ClCompile Include="src\CSqlCounter.cpp" />
+    <ClCompile Include="src\CTagCounter.cpp" />
+    <ClCompile Include="src\CUtil.cpp" />
+    <ClCompile Include="src\CVbCounter.cpp" />
+    <ClCompile Include="src\CVbscriptCounter.cpp" />
+    <ClCompile Include="src\CVerilogCounter.cpp" />
+    <ClCompile Include="src\CVHDLCounter.cpp" />
+    <ClCompile Include="src\CWebCounter.cpp" />
+    <ClCompile Include="src\CXMidasCounter.cpp" />
+    <ClCompile Include="src\CXmlCounter.cpp" />
+    <ClCompile Include="src\DiffTool.cpp" />
+	<ClCompile Include="src\FunctionParser.cpp" />
+    <ClCompile Include="src\LangUtils.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainObject.cpp" />
+    <ClCompile Include="src\UCCExceptDump.cpp" />
+    <ClCompile Include="src\UCCFilesOut.cpp" />
+    <ClCompile Include="src\UCCGlobals.cpp" />
+    <ClCompile Include="src\UCCThread.cpp" />
+    <ClCompile Include="src\UserIF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CAdaCounter.h" />
+    <ClInclude Include="src\CAssemblyCounter.h" />
+    <ClInclude Include="src\CBashCounter.h" />
+    <ClInclude Include="src\CBatchCounter.h" />
+    <ClInclude Include="src\CCJavaCsScalaCounter.h" />
+    <ClInclude Include="src\CCobolCounter.h" />
+    <ClInclude Include="src\cc_main.h" />
+    <ClInclude Include="src\CCCounter.h" />
+    <ClInclude Include="src\CCFScriptCounter.h" />
+    <ClInclude Include="src\CCJavaCsCounter.h" />
+    <ClInclude Include="src\CCodeCounter.h" />
+    <ClInclude Include="src\CColdFusionCounter.h" />
+    <ClInclude Include="src\CCsharpCounter.h" />
+    <ClInclude Include="src\CCshCounter.h" />
+    <ClInclude Include="src\CCssCounter.h" />
+    <ClInclude Include="src\CDataCounter.h" />
+    <ClInclude Include="src\CFortranCounter.h" />
+    <ClInclude Include="src\CHtmlCounter.h" />
+    <ClInclude Include="src\CIdlCounter.h" />
+    <ClInclude Include="src\CJavaCounter.h" />
+    <ClInclude Include="src\CJavascriptCounter.h" />
+    <ClInclude Include="src\CMakefileCounter.h" />
+    <ClInclude Include="src\CMatlabCounter.h" />
+    <ClInclude Include="src\CMidasCounter.h" />
+    <ClInclude Include="src\CmpMngr.h" />
+    <ClInclude Include="src\CmpMngrHtml.h" />
+    <ClInclude Include="src\CNeXtMidasCounter.h" />
+    <ClInclude Include="src\CObjCCounter.h" />
+    <ClInclude Include="src\CPascalCounter.h" />
+    <ClInclude Include="src\CPerlCounter.h" />
+    <ClInclude Include="src\CPhpCounter.h" />
+    <ClInclude Include="src\CPythonCounter.h" />
+    <ClInclude Include="src\CRubyCounter.h" />
+    <ClInclude Include="src\CScalaCounter.h" />
+    <ClInclude Include="src\CSqlCounter.h" />
+    <ClInclude Include="src\CTagCounter.h" />
+    <ClInclude Include="src\CUtil.h" />
+    <ClInclude Include="src\CVbCounter.h" />
+    <ClInclude Include="src\CVbscriptCounter.h" />
+    <ClInclude Include="src\CVerilogCounter.h" />
+    <ClInclude Include="src\CVHDLCounter.h" />
+    <ClInclude Include="src\CWebCounter.h" />
+    <ClInclude Include="src\CXMidasCounter.h" />
+    <ClInclude Include="src\CXmlCounter.h" />
+    <ClInclude Include="src\DiffTool.h" />
+	<ClCompile Include="src\FunctionParser.h" />
+    <ClInclude Include="src\LangUtils.h" />
+    <ClInclude Include="src\MainObject.h" />
+    <ClInclude Include="src\UCCExceptDump.h" />
+    <ClInclude Include="src\UCCFilesOut.h" />
+    <ClInclude Include="src\UCCGlobals.h" />
+    <ClInclude Include="src\UCCThread.h" />
+    <ClInclude Include="src\UserIF.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

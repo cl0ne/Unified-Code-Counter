@@ -1,0 +1,27 @@
+# common
+.DS_Store
+[Tt]humbs.db
+[Dd]esktop.ini
+*.bak
+*~
+.~*#
+.directory
+*.lnk
+
+# build and user files
+*.user
+ipch/
+*.opendb
+*.opensdf
+*.sdf
+*.ncb
+*.suo
+*.log
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+.vs/

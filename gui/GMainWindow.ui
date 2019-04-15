@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GMainWindowClass</class>
+ <widget class="QMainWindow" name="GMainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1148</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Unified Code Counter (UCC)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gucc.qrc">
+    <normaloff>:/images/gucc.png</normaloff>:/images/gucc.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="lblFilesA">
+            <property name="text">
+             <string>Files/Folders To Count:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="lwFileListA">
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddFileA">
+            <property name="toolTip">
+             <string>Add File</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/plus_sign.png</normaloff>:/images/plus_sign.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblAddFileA">
+            <property name="text">
+             <string>Add File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRemoveFileA">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string>Remove File</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/minus_sign.png</normaloff>:/images/minus_sign.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblRemoveFileA">
+            <property name="text">
+             <string>Remove File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddFolderA">
+            <property name="toolTip">
+             <string>Add Folder</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/add_folder.png</normaloff>:/images/add_folder.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblAddFolderA">
+            <property name="text">
+             <string>Add Folder</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget1">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="lblFilesB">
+            <property name="text">
+             <string>File Set B to Differentiate:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="lwFileListB">
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddFileB">
+            <property name="toolTip">
+             <string>Add File</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/plus_sign.png</normaloff>:/images/plus_sign.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblAddFileB">
+            <property name="text">
+             <string>Add File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRemoveFileB">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string>Remove File</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/minus_sign.png</normaloff>:/images/minus_sign.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblRemoveFileB">
+            <property name="text">
+             <string>Remove File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddFolderB">
+            <property name="toolTip">
+             <string>Add Folder</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/add_folder.png</normaloff>:/images/add_folder.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblAddFolderB">
+            <property name="text">
+             <string>Add Folder</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget2">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="lblExtensionList">
+            <property name="text">
+             <string>Filter Extensions:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="lwExtensionList">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnClearSelExt">
+            <property name="toolTip">
+             <string>Clear Extension Selection</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="gucc.qrc">
+              <normaloff>:/images/minus_sign.png</normaloff>:/images/minus_sign.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblClearSelExt">
+            <property name="text">
+             <string>Clear Selection</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="bgrpOptions">
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Program Options</string>
+      </property>
+      <widget class="QCheckBox" name="chkDupThreshold">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Duplicate Threshold (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-tdup &amp;lt;#&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Specifies the percentage of logical source lines of code (LSLOC) that have changed between two files of the same name in order to determine whether the files are duplicates. If the percentage of common LSLOC between two files is less than or equal to the specified threshold, the files are considered duplicates. This method compares LSLOC similar to the differencing function and ignores formatting including blank lines and comments. Note that files of different names may be checked for an exact physical match. The valid range is 0 to 100 and defaults to 0.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Duplicate Threshold</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkDifferencing">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>97</y>
+         <width>111</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Differencing (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-d&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enables the differencing function. If not specified, only the counting functions will execute.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Differencing</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkModThreshold">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>121</y>
+         <width>151</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Modified Threshold (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-t &amp;lt;#&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Specifies the percentage of common characters between two lines of code that are being compared in order to determine whether the line is modified or replaced. If the percentage of common characters between the compared lines is greater than the specified threshold, the line is considered replaced and will be counted as one line deleted and one line added. Otherwise, it will be counted as one modified line. The valid range is 0 to 100 and defaults to 60.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Modified Threshold</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtModThreshold">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkTruncThreshold">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>254</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Line Truncate (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-trunc &amp;lt;#&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Specifies the maximum number of characters allowed in a logical source line of code (LSLOC). Any characters beyond the specified threshold will be truncated and ignored when compared. If the truncation is disabled by setting the threshold to 0 or the threshold is set too high, very long LSLOC may significantly degrade performance.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Line Truncate</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkVisualDiffResult">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>147</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Visual Differencing Result</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtTruncThreshold">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>253</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>10000</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtDupThreshold">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>228</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="grpbProcessing">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>100</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>                                Processing</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="chkProcDuplicates">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Process Duplicates (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;inverse -nodup&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enables separate processing of duplicate files. Disabling this avoids extra processing time to determine the presence of duplicate files within each baseline. When disabled, all files will be counted and reported together, regardless of whether they are duplicates. Otherwise, file within a baseline will be checked for duplicates and results will be reported separately. Please see the user manual for details.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Process Duplicates?</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chkProcComplexity">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Process Complexity (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;inverse -nocomplex&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enables printing of keyword counts and processing of complexity metrics. Disabling this can reduce processing time and limit reports.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Process Complexity?</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chkWarnings">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri';&quot;&gt;If this is set then no warning messages will show on the user interface.  Warning messages will still be in the log files.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>No Warnings</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="grpbOutputFormat">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>100</y>
+         <width>141</width>
+         <height>142</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Output Format</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QRadioButton" name="rdoCSVOutput">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Comma Separated (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;default&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Prints CSV (*.csv) report files instead of ASCII text (*.txt) files. The content of the CSV format is identical to the ASCII format.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Comma Separated</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rdoAsciiOutput">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Plain Text (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-ascii&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Prints ASCII text (*.txt) report files instead of CSV (*.csv) files. The content of the ASCII format is identical to the CSV format.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Plain Text</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rdoLegacyOutput">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Legacy Text (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-legacy&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Prints legacy formatted ASCII text report files instead of the current format of the CSV or ASCII text files. The purpose of this option is to maintain backward compatibility with some older UCC results post-processing software systems. This options is rarely required.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Legacy Text</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chkUnifiedOut">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Unified Output (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-unified&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Prints language report files to a single unified report file. The results are written to 'TOTAL_outfile.csv' or 'TOTAL_outfile.txt'. In the absence of this option, results for each language are written to separate files.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Unified Output</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chkCc4Enable">
+          <property name="text">
+           <string>CC4 Enable</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QCheckBox" name="chkRamLimit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri';&quot;&gt;Tell UCC what is a reasonable RAM limit to use to decide if a warning is needed about estimated minimum RAM use.  # may be 1 (default is 5 if not specified) up to 5120.  Each number above zero represents an increment of 100 Mbytes.  So 10 is approximately 1 Gbyte and 5120 is exactly 500 Gbytes.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Ram Limit:  1 to 5120</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtRamLimit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>200</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string>20</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkThreads">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri';&quot;&gt;Tell UCC to use extra worker Threads for faster processing.  You should probably not use more than 3 times the number of CPU cores available.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Threads:  2 to 80</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtThreads">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>170</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tell UCC that you want to use extra worker threads for faster processing.  No extra worker threads will be used if this is not checked.  You probably should not use more than 3 times the actual number of CPU cores.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>751</width>
+         <height>78</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="txtExtensionFile">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="lblOutputDir">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Working Directory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Specifies the directory where any intermediate files will be written. The output files will be written to the working directory by default unless an Output Directory is specified.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Output Directory</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="txtOutputDir"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btnBrowseOutputDir">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Browse the file system for the Working Directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="gucc.qrc">
+            <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="chkExtensionFile">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Extension File (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-extfile &amp;lt;filePath&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Specifies a file containing user specified file extensions for any of the available language counters. Any language counter specified within this file will have its associated extensions replaced. If a language is specified with no extensions, the language counter will be disabled. The file format contains a single line entry for each language. Single or multi-line comments may be included with square brackets []. For example:&lt;/p&gt;&lt;p&gt;C_CPP = *.cpp, *.h [C/C++ extensions]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Extension File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btnBrowseExtensionFile">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Browse the file system for the Extension File.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="gucc.qrc">
+            <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QCheckBox" name="chkProcLinks">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>160</y>
+         <width>161</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Follow Links (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;inverse -nolinks&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enables following symbolic links to directories and counting of links to files on Unix systems. Disabling this can prevent duplicate file counts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Follow Links?</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkClearCaseFiles">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>116</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Clear Case Files (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-cf&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Indicates that the target files were retrieved from IBM Rational ClearCase. ClearCase appends information at the end of file names beginning with '@@'. Use of this option strips all characters after the last '@@' sequence from the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Clear Case Files</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkUncounted">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>140</y>
+         <width>161</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri';&quot;&gt;If this is set then there will be no Uncounted file message for either the user interface or the log files.  Not recommended except for experienced users.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>No Uncounted File Message</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="gbxHeader">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>190</y>
+         <width>671</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Custom Header</string>
+       </property>
+       <widget class="QCheckBox" name="cbxNoHeader">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No Header</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnCustomHeader">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>32</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Header File</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtHeader">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>521</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QCheckBox" name="chkFuncDifferencing">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Differencing (&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;-d&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enables the differencing function. If not specified, only the counting functions will execute.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Function Level Differencing</string>
+       </property>
+      </widget>
+      <zorder>gbxHeader</zorder>
+      <zorder>chkDupThreshold</zorder>
+      <zorder>chkDifferencing</zorder>
+      <zorder>chkModThreshold</zorder>
+      <zorder>txtModThreshold</zorder>
+      <zorder>chkTruncThreshold</zorder>
+      <zorder>chkVisualDiffResult</zorder>
+      <zorder>txtTruncThreshold</zorder>
+      <zorder>txtDupThreshold</zorder>
+      <zorder>grpbProcessing</zorder>
+      <zorder>grpbOutputFormat</zorder>
+      <zorder>chkRamLimit</zorder>
+      <zorder>txtRamLimit</zorder>
+      <zorder>chkThreads</zorder>
+      <zorder>txtThreads</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>chkProcLinks</zorder>
+      <zorder>chkClearCaseFiles</zorder>
+      <zorder>chkUncounted</zorder>
+      <zorder></zorder>
+      <zorder>chkFuncDifferencing</zorder>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QPushButton" name="btnStart">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Starts the execution of counting and/or comparison based on the current selections.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Start</string>
+          </property>
+          <property name="icon">
+           <iconset resource="gucc.qrc">
+            <normaloff>:/images/start.png</normaloff>:/images/start.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnStop">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Stops the currently running counting operation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Stop</string>
+          </property>
+          <property name="icon">
+           <iconset resource="gucc.qrc">
+            <normaloff>:/images/stop.png</normaloff>:/images/stop.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtMessages">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1148</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="windowicon" stdset="0">
+    <iconset resource="gucc.qrc">
+     <normaloff>:/images/gucc.png</normaloff>:/images/gucc.png</iconset>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionUser_Manual"/>
+    <addaction name="actionRelease_Notes"/>
+    <addaction name="actionLicense"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_File">
+   <property name="icon">
+    <iconset resource="gucc.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open File</string>
+   </property>
+   <property name="toolTip">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="gucc.qrc">
+     <normaloff>:/images/close.png</normaloff>:/images/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUser_Manual">
+   <property name="icon">
+    <iconset resource="gucc.qrc">
+     <normaloff>:/images/help.png</normaloff>:/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>User Manual</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionEdit_Extensions">
+   <property name="icon">
+    <iconset resource="gucc.qrc">
+     <normaloff>:/images/edit.png</normaloff>:/images/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>View/Edit Extensions</string>
+   </property>
+   <property name="toolTip">
+    <string>View/Edit Extensions</string>
+   </property>
+  </action>
+  <action name="actionRelease_Notes">
+   <property name="text">
+    <string>Release Notes</string>
+   </property>
+   <property name="toolTip">
+    <string>Release Notes</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>License</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lwFileListA</tabstop>
+  <tabstop>btnAddFileA</tabstop>
+  <tabstop>btnRemoveFileA</tabstop>
+  <tabstop>btnAddFolderA</tabstop>
+  <tabstop>lwFileListB</tabstop>
+  <tabstop>btnAddFileB</tabstop>
+  <tabstop>btnRemoveFileB</tabstop>
+  <tabstop>btnAddFolderB</tabstop>
+  <tabstop>lwExtensionList</tabstop>
+  <tabstop>btnClearSelExt</tabstop>
+  <tabstop>txtOutputDir</tabstop>
+  <tabstop>btnBrowseOutputDir</tabstop>
+  <tabstop>chkExtensionFile</tabstop>
+  <tabstop>txtExtensionFile</tabstop>
+  <tabstop>btnBrowseExtensionFile</tabstop>
+  <tabstop>chkDifferencing</tabstop>
+  <tabstop>chkModThreshold</tabstop>
+  <tabstop>txtModThreshold</tabstop>
+  <tabstop>chkTruncThreshold</tabstop>
+  <tabstop>txtTruncThreshold</tabstop>
+  <tabstop>rdoCSVOutput</tabstop>
+  <tabstop>rdoAsciiOutput</tabstop>
+  <tabstop>rdoLegacyOutput</tabstop>
+  <tabstop>chkUnifiedOut</tabstop>
+  <tabstop>btnStart</tabstop>
+  <tabstop>btnStop</tabstop>
+  <tabstop>txtMessages</tabstop>
+ </tabstops>
+ <resources>
+  <include location="gucc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
